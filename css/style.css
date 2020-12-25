@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+:root {
+    --blue: #007bff;
+    --orange: #fd7e14;
+    --green: #28a745;
+    --teal: #20c997;
+    --white: #fff;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+}
+
+* {
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box !important;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.img {
+    width: 100%;
+}
+
+.top-header {
+    height: 40px;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--light);
+}
+
+.phone {
+    font-weight: 600;
+}
+
+.phone > span > a {
+    color: var(--orange);
+}
+
+.cart-box {
+    display: flex;
+}
+
+.login .btn {
+    color: var(--light);
+    font-weight: 600;
+    letter-spacing: 1px;
+    background: var(--orange);
+    padding: 5px 10px !important;
+}
+
+.cart {
+    display: inline-block;
+    /*    height: 40px;*/
+    width: 50px;
+    /*    border: 1px solid;*/
+    text-align: center;
+}
+
+.cart > .fas {
+    font-size: 25px;
+    line-height: 37px;
+}
+
+.fas {
+    /*    height: 40px;*/
+    width: 30px;
+}
+
+.header {
+    /*    height: 40px;*/
+    padding: 20px 0 !important;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--light);
+    /*    border: 1px solid;*/
+}
+
+.header .logo {}
+
+/*Top selling offer*/
+.heading {
+    width: 100%;
+    text-align: center;
+    padding: 40px 0 !important;
+}
+
+.heading h1 {
+    position: relative;
+    font-weight: 700;
+    letter-spacing: -0.8px;
+    padding: 10px 0 !important;
+}
+
+.heading h1:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    height: 3px;
+    justify-content: center;
+    width: 10%;
+    background: var(--orange)
+}
+
+.card {
+    padding-bottom: 20px !important;
+    margin: 10px 0 !important;
+}
+
+.card img {
+    width: 60%;
+    padding: 10px 0 !important;
+}
+
+.card-title {
+    padding: 5px 0 !important;
+    font-weight: 600;
+}
+
+.card-rating {
+    padding: 5px 0 !important;
+    color: var(--orange);
+}
+
+.card-price {
+    padding: 5px 0 !important;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.card-price .fas {
+    color: var(--orange);
+}
+
+.card-btn {
+    font-size: 14px;
+    margin: 5px 0 !important;
+    padding: 8px 25px !important;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.offer {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 3px 8px !important;
+    letter-spacing: 1px;
+    font-weight: 600;
+    background: var(--orange);
+    color: var(--white);
+}
+
+/*footer design
+**********************/
+.footer {
+    color: rgba(255, 255, 255, 0.8);
+    padding: 40px 0 !important;
+}
+
+.f-heading {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--orange);
+}
+
+.f-list li {
+    list-style: none;
+    padding: 5px 0 !important;
+    font-weight: 550;
+}
+
+.f-list li .fas {
+    font-size: 20px;
+    color: var(--orange);
+    height: 30px;
+    width: 30px;
+}
+
+.f-list li a {
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 550;
+}
+
+.f-list li a i {
+    line-height: 30px;
+    border-radius: 10px;
+    height: 30px;
+    width: 30px;
+    font-size: 36px;
+    color: var(--orange);
+    background: var(--white);
+    margin: 0 5px !important;
+}
+
+.f-list li a i:hover {
+    color: var(--white);
+    background: var(--orange);
+}
+
+.footer-rights {
+    background: #222;
+    color: var(--orange);
+    padding: 20px 0 !important;
+}
+
+.footer-rights p {
+    text-align: center;
+    font-weight: 600
+}
+
+
+
+
+/*Responsive code
+************************/
+@media screen and (max-width:768px) {
+    .top-header{
+        margin: 0 5px !important;
+    }
+    .top-header .phone{
+        font-size: 12px;
+    }
+    .login{
+        padding: 2px 8px!important;
+    }
+    .login .btn{
+        font-size: 12px;
+    }
+    .logo img{
+        width: 80%;
+        padding: 10px 0!important;
+    }
+    .header {
+        flex-direction: column;
+        padding: 0 20px!important;
+        align-items: center;
+    }
+    .f-list{
+        margin: 0 20px !important;
+    }
+    .hide{
+        display: none;
+    }
+    .form-inline{
+        flex-flow: row;
+/*        display: inline-block!important;*/
+    }
+    .heading{
+        padding: 10px 0!important;
+    }
+    .heading h1{
+        font-size: 24px;
+    }
+}
